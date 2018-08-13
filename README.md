@@ -12,7 +12,7 @@ A library containing some data structures and algorithms written in c/c++&Java.
 |Binary Search Tree|<#file#>| <#commit#> |
 |Trie tree |<#file#>| <#commit#> |
 |Graph| <#file#> | <#commit#> |
-|String| <#file#>| <#commit#> |  
+|String| [String](./DataStructure/String/MyString.h) | Implement some string class member functions |  
 |Polynomial| <#file#>| <#commit#> |  
 
 
