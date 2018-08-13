@@ -8,6 +8,7 @@ A library containing some data structures and algorithms written in c/c++&Java.
 | ---- | -----| ------- |
 |vector |<#file#>| <#commit#> |
 |LinkList|<#file#>| <#commit#> |
+|Binary Tree| [BinaryTree](./DataStructure/BinaryTree/BinTree.h) | The establishment of binary tree and various operations |
 |Binary Search Tree|<#file#>| <#commit#> |
 |Trie tree |<#file#>| <#commit#> |
 |Graph| <#file#> | <#commit#> |
