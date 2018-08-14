@@ -6,7 +6,7 @@ A library containing some data structures and algorithms written in c/c++&Java.
 
 | Name |Source| Comment |
 | ---- | -----| ------- |
-|vector |<#file#>| <#commit#> |
+|Vector | [Vector](./DataStructure/Vector/Vector.h) | The implementation USES memory library to manage memory to implement the vector class of STL |
 |LinkList|<#file#>| <#commit#> |
 |Binary Tree| [BinaryTree](./DataStructure/BinaryTree/BinTree.h) | The establishment of binary tree and various operations |
 |Binary Search Tree|<#file#>| <#commit#> |
