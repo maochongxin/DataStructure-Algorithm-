@@ -2,7 +2,7 @@
 //  main.cpp
 //  List
 //
-//  Created by maochongxin on 2018/8/27.
+//  Created by maochongxin on 2018/8/29.
 //  Copyright © 2018 Maochongxin. All rights reserved.
 //
 
@@ -27,13 +27,13 @@ private:
     ListNode Root;
     
     size_t _getLength(ListNode node) {
-//        int len = 0;
-//        ListNode first = Root;
-//        while (node -> Next != first) {
-//            node = node -> Next;
-//            len++;
-//        }
-//        return len + 1;
+        //        int len = 0;
+        //        ListNode first = Root;
+        //        while (node -> Next != first) {
+        //            node = node -> Next;
+        //            len++;
+        //        }
+        //        return len + 1;
         ListNode cur = node;
         int cnt = 0;
         while (cur != end()) {
@@ -62,15 +62,15 @@ private:
             node = node -> Next;
         }
         cout << node -> data;
-//        int times = 0;
-//        while (times < getLength()) {
-//            cout << node -> data << " ";
-//            node = node -> Next;
-//            times++;
-//        }
+        //        int times = 0;
+        //        while (times < getLength()) {
+        //            cout << node -> data << " ";
+        //            node = node -> Next;
+        //            times++;
+        //        }
         
     }
-
+    
     void _push_back(ListNode node,T data) {
         ListNode pre = node -> Preview;
         ListNode newNode = new Node<T>(data);
@@ -78,8 +78,28 @@ private:
         newNode -> Preview = pre;
         newNode -> Next = node;
         node -> Preview = newNode;
-    
     }
+    
+    bool _Remove(ListNode node,size_t index) {
+        if (index > getLength()) {
+            return false;
+        } else {
+            int th = 1;
+            ListNode cur = node;
+            while (th < index) {
+                cur = cur -> Next;
+                th++;
+            }
+            ListNode bef = cur -> Preview;
+            ListNode next = cur -> Next;
+            bef -> Next = next;
+            next -> Preview = bef;
+            delete cur;
+            cur = nullptr;
+            return true;
+        }
+    }
+    
     bool _empty(ListNode node) {
         return node == NULL;
     }
@@ -128,6 +148,9 @@ public:
     void push_back(const T& data) {
         _push_back(Root, data);
     }
+    bool Remove(size_t index) {
+        return _Remove(Root, index);
+    }
     ListNode begin() {
         return getNode(Root);
     }
@@ -147,36 +170,42 @@ public:
 
 
 int main(int argc, const char * argv[]) {
-//    List<int> l(3);
-//    l.push_back(1);
-//    l.push_back(2);
-//    l.push_back(3);
-//    l.print();
-//    cout << endl;
-//    cout << l.begin() -> data;
-//    cout << endl;
-//    cout << l.end() -> data;
-//    cout << endl;
-//    l.Reverse();
-//    l.print();
+    //    List<int> l(3);
+    //    l.push_back(1);
+    //    l.push_back(2);
+    //    l.push_back(3);
+    //    l.print();
+    //    cout << endl;
+    //    cout << l.begin() -> data;
+    //    cout << endl;
+    //    cout << l.end() -> data;
+    //    cout << endl;
+    //    l.Reverse();
+    //    l.print();
     int arr[] = {1,2,3,4,5,6,7,8};
     List<int> l(arr,8);
     l.print();
+    cout << endl << l.getLength();
     cout << endl;
-    cout << l.end() -> data << endl;
-    l.Reverse();
-    cout << l.end() -> data << endl;
+    //    cout << endl;
+    //    cout << l.end() -> data << endl;
+    //    l.Reverse();
+    //    cout << l.end() -> data << endl;
+    //    l.print();
+    //    cout << endl;
+    //    l.push_back(12);
+    //    l.print();
+    //    cout << endl << l.getLength() << endl;
+    //    l.Reverse();
+    //    l.print();
+    //    cout << endl;
+    //    l.push_back(100);
+    //    l.print();
+    //    cout << endl;
+    //    cout << l.end() -> data << "---" << l.begin() -> data << "---" << l.getLength() << endl;
+    l.Remove(2);
     l.print();
     cout << endl;
-    l.push_back(12);
-    l.print();
-    cout << endl << l.getLength() << endl;
-    l.Reverse();
-    l.print();
-    cout << endl;
-    l.push_back(100);
-    l.print();
-    cout << endl;
-    cout << l.end() -> data << " " << l.begin() -> data << " " << l.getLength();
+    cout << l.getLength();
     return 0;
 }
