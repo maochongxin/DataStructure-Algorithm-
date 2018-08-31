@@ -21,7 +21,7 @@ A library containing some data structures and algorithms written in c/c++&Java.
 
 | Name | Source |Comment |
 | ---- | -------|------- |
-|Sorting Algorithm |  ./Algorithm/Sort/MySort.cpp | Classic sort C++ template |
+|Sorting Algorithm |  [Sort](./Algorithm/Sort/MySort.cpp) | Classic sort C++ template |
 |Search Algorithm| <#file#>| <#commit#>|
 |Shortest Algorithm| <#file#>| <#commit#>|
 |Union Find Algorithm|  <#file#> | <#commit#>|
