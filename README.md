@@ -27,7 +27,7 @@ A library containing some data structures and algorithms written in c/c++&Java.
 |Union Find Algorithm| [UnionFind](./Algorithm/UnionFind/UnionFind.java) | <#commit#>|
 |Minimum Spanning Tree | <#file#> | <#commit#> |
 |KMP |  <#file#> | <#commit#> |
-|minimax algorithm|  <#file#>|  <#commit#>|
+|minimax algorithm| [Min&Max](./Algorithm/MinMax/minmax.cpp)|   |
 
 
 ## License
