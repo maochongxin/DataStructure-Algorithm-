@@ -13,7 +13,7 @@ A library containing some data structures and algorithms written in c/c++&Java.
 |Trie tree |<#file#>| <#commit#> |
 |Graph| <#file#> | <#commit#> |
 |String| [String](./DataStructure/String/MyString.h) | Implement some string class member functions |  
-|Polynomial| <#file#>| <#commit#> |
+|Polynomial| [Polynomial.h](./DataStructure/Polynomial/Polynomial.h)[Polynomial.cpp](./DataStructure/Polynomial/main.cpp)|Polynomial addition C++ implementation |
 |Queue| [Queue](./DataStructure/Queue/Queue.cpp) | simple queue |  
 
 
