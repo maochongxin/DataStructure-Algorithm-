@@ -28,6 +28,7 @@ A library containing some data structures and algorithms written in c/c++&Java.
 |Minimum Spanning Tree | <#file#> | <#commit#> |
 |KMP |  <#file#> | <#commit#> |
 |minimax algorithm| [Min&Max](./Algorithm/MinMax/minmax.cpp)|   |
+|Fibonacci sequence| [Fibonacci sequence](./Algorithm/Fib/fib.h)| |
 
 
 ## License
