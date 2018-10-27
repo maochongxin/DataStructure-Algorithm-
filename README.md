@@ -23,6 +23,7 @@ A library containing some data structures and algorithms written in c/c++&Java.
 |Union Find Algorithm| [UnionFind](./Algorithm/UnionFind/UnionFind.java) | <#commit#>|
 |minimax algorithm| [Min&Max](./Algorithm/MinMax/minmax.cpp)|   |
 |Fibonacci sequence| [Fibonacci sequence](./Algorithm/Fib/fib.h)| |
+|KMP|[test.cpp](./Algorithm/KMP/main.cpp)[KMP.h](./Algorithm/KMP/KMP.h) | |
 
 
 ## License
