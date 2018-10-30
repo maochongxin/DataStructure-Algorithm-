@@ -13,7 +13,8 @@ A library containing some data structures and algorithms written in c/c++&Java.
 |AVL Tree| [AVL Tree.h](./DataStructure/AVLTree/AVLTree.h)  [test.cpp](./DataStructure/AVLTree/main.cpp)| |
 |String| [String](./DataStructure/String/MyString.h) | Implement some string class member functions |  
 |Polynomial| [Polynomial.h](./DataStructure/Polynomial/Polynomial.h)[Polynomial.cpp](./DataStructure/Polynomial/main.cpp)|Polynomial addition C++ implementation |
-|Queue| [Queue](./DataStructure/Queue/Queue.cpp) | simple queue |  
+|Queue| [Queue](./DataStructure/Queue/Queue.cpp) | simple queue |
+|Trie|[Trie](./DataStructure/Trie/Trie.h)| |
 
 
 ## Algorithm
