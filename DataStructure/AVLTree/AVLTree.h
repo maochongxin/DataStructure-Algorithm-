@@ -55,7 +55,6 @@ private:
     }
     static Position SingleRotateWithLeft(Position k2) {
         Position k1 = k2 -> left;
-        k1 = k2 -> left;
         k2 -> left = k1 -> right;
         k1 -> right = k2;
         k2 -> height = max(Height(k2 -> left),Height(k2 -> right)) + 1;
@@ -64,7 +63,6 @@ private:
     }
     static Position SingleRotateWithRight(Position k2) {
         Position k1 = k2 -> right;
-        k1 = k2 -> right;
         k2 -> right = k1 -> left;
         k1 -> left = k2;
         k2 -> height = max(Height(k2 -> left), Height(k2 -> right)) + 1;
@@ -124,7 +122,7 @@ Node<T>* AVL<T>::_Insert(Node<T>*& tree,T _data) {
     } else if(_data < tree -> data) {
         tree -> left = _Insert(tree -> left, _data);
         if (Height(tree -> left) - Height(tree -> right) == 2) {
-            if(_data > tree -> left -> data) {
+            if(_data < tree -> left -> data) {
                 tree = SingleRotateWithLeft(tree);
             } else {
                 tree = DoubleRotateWithLeft(tree);

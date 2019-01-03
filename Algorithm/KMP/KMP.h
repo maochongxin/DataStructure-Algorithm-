@@ -29,7 +29,7 @@ void getNext(string str) {
 int KMP(string str,string s) {
     getNext(s);
     int i = 0, j = 0;
-    while (i < str.length() && j < (int)s.length()) {   //一定要注意length是unsigned类型,与负数做比较事会发生强转 可能会导致结果永远为真或假
+    while (i < str.length() && j < (int)s.length()) {   //一定要注意length是unsigned类型,与负数做比较时会发生强转 可能会导致结果永远为真或假
         if (j == -1 || str[i] == s[j]) {
             i++;
             j++;
