@@ -14,7 +14,7 @@ A library containing some data structures and algorithms written in c/c++&Java.
 |String| [String](./DataStructure/String/MyString.h) | Implement some string class member functions |  
 |Polynomial| [Polynomial.h](./DataStructure/Polynomial/Polynomial.h)[Polynomial.cpp](./DataStructure/Polynomial/main.cpp)|Polynomial addition C++ implementation |
 |Queue| [Queue](./DataStructure/Queue/Queue.cpp) | simple queue |
-|Trie|[Trie](./DataStructure/Trie/Trie.h)| |
+|Trie|[Trie](./DataStructure/Trie/Trie.h),[Trie_cpp11](./DataStructure/Trie/Trie_cpp11.h)| |
 
 
 ## Algorithm
