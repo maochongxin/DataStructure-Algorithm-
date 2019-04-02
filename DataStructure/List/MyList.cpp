@@ -127,13 +127,13 @@ public:
     List() = default;
     List(T _data) {
         Root = new Node<T>(_data);
-        Root -> Next = Root;
-        Root -> Preview = Root;
+        Root->Next = Root;
+        Root->Preview = Root;
     }
     List(T* arr,size_t len) {
         Root = new Node<T>(arr[0]);
-        Root -> Next = Root;
-        Root -> Preview = Root;
+        Root->Next = Root;
+        Root->Preview = Root;
         for (int i = 1; i < len; i++) {
             this -> push_back(arr[i]);
         }
